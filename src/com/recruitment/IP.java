@@ -28,7 +28,7 @@ public class IP {
 			}
 			String a = "255";
 			int cont = 0;
-			for(String s:parts) {
+			for (String s : parts) {
 				if (cont < 3) {
 					if (s.length() > a.length()) {
 						return false;
@@ -36,7 +36,7 @@ public class IP {
 						a = s;
 					}
 					cont++;
-				}	
+				}
 			}
 			for (String s : parts) {
 				int i = Integer.parseInt(s);
